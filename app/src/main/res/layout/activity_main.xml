@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <data class="MainActivityDataBinDing">
+
+
+   </data>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       tools:context=".MainActivity">
+
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:onClick="testBt1"
+          android:text="子线程计时器"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:text="网络请求"
+          android:onClick="testBt2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:text="阻塞式同步切换线程"
+          android:onClick="testBt3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <Button
+          android:text="阻塞式同步切换线程(ANR测试)"
+          android:onClick="testBt5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <Button
+          android:text="非阻塞式异步切换线程"
+          android:onClick="testBt4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+   </LinearLayout>
+</layout>
